@@ -1,0 +1,196 @@
+/* Main Layout Blocks */ 
+
+.wrapper {
+@include clear;
+max-width: 1200px;
+margin: 30px auto;
+}
+.container {
+@include clear;
+width: 100%;
+margin: 10px 0;
+}
+
+/* Gutter Layout */ 
+
+.logo {
+@include grid(3,  0);
+@include break(tablet, 100%);
+}
+.search {
+@include grid(6,  0);
+@include break(tablet, 50%);
+}
+.social-share {
+@include grid(3,  0);
+@include break(tablet, 50%);
+}
+.banner {
+@include grid(12,  0);
+@include break(tablet, 100%);
+}
+ 
+.tab {
+@include grid(3,  0);
+@include break(tablet, 50%);
+@include break(mobile, 100%);
+}
+.content {
+@include grid(6,  0);
+@include break(tablet, 100%);
+}
+.content-two {
+@include grid(4,  0);
+@include break(tablet, 100%);
+}
+.tabs {
+@include grid(3,  0);
+@include break(tablet, 50%);
+}
+.two {
+@include grid(2,  0);
+@include break(tablet, 50%);
+}
+.one {
+@include grid(1,  0);
+@include break(mobile, 50%);
+}
+.footer-links {
+@include grid(10,  0);
+@include break(tablet, 100%);
+}
+.social {
+@include grid(1,  0);
+@include break(tablet, 50%);
+}
+
+/* No Gutter Layout */ 
+
+
+.logo2 {
+@include grid2(3, 0);
+@include break(tablet, 100%);
+}
+.search2 {
+@include grid2(6, 0);
+@include break2(tablet, 50%);
+}
+.share2 {
+@include grid2(3, 0);
+@include break2(tablet, 50%);
+}
+.banner2 {
+@include grid2(12, 0);
+}
+ 
+.tab2 {
+@include grid2(3, 0);
+@include break2(tablet, 50%);
+@include break2(mobile, 100%);
+}
+.content2 {
+@include grid2(6, 0);
+@include break2(tablet, 100%);
+}
+.content-two2 {
+@include grid2(4, 0);
+@include break2(tablet, 100%);
+}
+.tabs2 {
+@include grid2(3, 0);
+@include break2(tablet, 50%);
+}
+.two2 {
+@include grid2(2, 0);
+@include break2(tablet, 50%);
+}
+.footer-links2 {
+@include grid2(10, 0);
+@include break2(tablet, 100%);
+}
+.social2 {
+@include grid2(1, 0);
+@include break2(tablet, 50%);
+}
+
+/* Push Layout */ 
+
+.three {
+@include grid(3,  0);
+
+@include break(mobile, 50%);
+}
+
+.four {
+@include grid(4,  0);
+
+@include break(mobile, 50%);
+}
+
+.five {
+@include grid(5,  0);
+
+@include break(mobile, 50%);
+}
+
+.six {
+@include grid(6,  0);
+
+@include break(mobile, 50%);
+}
+
+.seven {
+@include grid(7,  0);
+
+@include break(mobile, 50%);
+}
+
+.eight {
+@include grid(8,  0);
+
+@include break(mobile, 50%);
+}
+
+.nine {
+@include grid(9,  0);
+
+@include break(mobile, 50%);
+}
+
+
+.push2 {
+@include grid(2, 2);
+
+@include break(mobile, 50%);
+}
+.push3 {
+@include grid(2, 3);
+
+@include break(mobile, 50%);
+}
+.push4 {
+@include grid(2, 4);
+
+@include break(mobile, 50%);
+}
+
+.push5 {
+@include grid(2,  5);
+
+@include break(mobile, 50%);
+}
+
+.push6 {
+@include grid(2,  6);
+
+@include break(mobile, 50%);
+}
+
+.push7 {
+@include grid(2,  7);
+
+@include break(mobile, 50%);
+}
+
+
+

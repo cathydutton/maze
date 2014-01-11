@@ -1,0 +1,58 @@
+/* Grid Mixin  */
+$grid-columns: 12;
+$unit: (100%  / $grid-columns) ; 
+$gutter: 2%;
+$push: 0 !default;
+$gutter2: 0;
+	
+@mixin grid($col, $push) {
+float: left;
+width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) ) ;
+border: solid 1px #e3e3e3;
+padding:20px;
+@include remove-padding;
+@include transition;
+background: $base-color;
+position:relative;
+cursor:pointer;
+margin-right: $gutter;
+	@if $push > 1 {
+	margin-left:(($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
+	}
+	&:last-child {
+	margin-right:0;
+	
+	}
+&:hover {
+ background: $brown;
+ color:$white;
+}
+}
+
+
+
+
+
+@mixin grid2($coll, $push) {
+	@include remove-padding;
+@include transition;
+float: left;
+width: (($unit * $coll) - $gutter2 ) + ( $gutter2 / ( $grid-columns / $coll) ) ;
+border: solid 1px #e3e3e3;
+padding:20px;
+background: $base-color;
+position:relative;
+cursor:pointer;
+margin-right: $gutter2;
+	@if $push > 1 {
+	margin-left:(($unit * $push) ) + ( $gutter2 / ( $grid-columns / $push) );
+	}
+	&:last-child {
+	margin-right:0;
+	}
+&:hover {
+ background: $brown;
+ color:$white;
+}
+}
+
