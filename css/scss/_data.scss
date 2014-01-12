@@ -4,28 +4,15 @@ $blue:#82d2e5;
 $green:#c1d72e;
 $white: #fff;
 $brown: #312a1e;
-$base-color: $orange !default;
+$base-color:$orange ;
 
-/* Mixins */
 
-/*@mixin base-color ($base-color) {
-background:$base-color;
-}
-.randomclass-1 .container > div{
-@include base-color($orange);
-}
-.randomclass-2 .container > div {
-@include base-color($blue);
-}
-.randomclass-3 .container > div {
-@include base-color($green);
-}*/
 
 @mixin clear {
 overflow: hidden;
 position: relative;
 }
- @mixin remove-padding {
+ @mixin box-size {
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
 box-sizing: border-box;

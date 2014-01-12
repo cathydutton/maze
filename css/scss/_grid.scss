@@ -10,10 +10,9 @@ float: left;
 width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) ) ;
 border: solid 1px #e3e3e3;
 padding:20px;
-@include remove-padding;
+@include box-size;
 @include transition;
 background: $base-color;
-position:relative;
 cursor:pointer;
 margin-right: $gutter;
 	@if $push > 1 {
@@ -34,7 +33,7 @@ margin-right: $gutter;
 
 
 @mixin grid2($coll, $push) {
-	@include remove-padding;
+	@include box-size;
 @include transition;
 float: left;
 width: (($unit * $coll) - $gutter2 ) + ( $gutter2 / ( $grid-columns / $coll) ) ;

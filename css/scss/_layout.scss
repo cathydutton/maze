@@ -73,11 +73,11 @@ margin: 10px 0;
 }
 .search2 {
 @include grid2(6, 0);
-@include break2(tablet, 50%);
+@include break(tablet, 50%);
 }
 .share2 {
 @include grid2(3, 0);
-@include break2(tablet, 50%);
+@include break(tablet, 50%);
 }
 .banner2 {
 @include grid2(12, 0);
@@ -85,32 +85,32 @@ margin: 10px 0;
  
 .tab2 {
 @include grid2(3, 0);
-@include break2(tablet, 50%);
-@include break2(mobile, 100%);
+@include break(tablet, 50%);
+@include break(mobile, 100%);
 }
 .content2 {
 @include grid2(6, 0);
-@include break2(tablet, 100%);
+@include break(tablet, 100%);
 }
 .content-two2 {
 @include grid2(4, 0);
-@include break2(tablet, 100%);
+@include break(tablet, 100%);
 }
 .tabs2 {
 @include grid2(3, 0);
-@include break2(tablet, 50%);
+@include break(tablet, 50%);
 }
 .two2 {
 @include grid2(2, 0);
-@include break2(tablet, 50%);
+@include break(tablet, 50%);
 }
 .footer-links2 {
 @include grid2(10, 0);
-@include break2(tablet, 100%);
+@include break(tablet, 100%);
 }
 .social2 {
 @include grid2(1, 0);
-@include break2(tablet, 50%);
+@include break(tablet, 50%);
 }
 
 /* Push Layout */ 
