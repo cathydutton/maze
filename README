@@ -1,11 +1,21 @@
+# Maze
+# Cathy Dutton
+# http://www.cathydutton.co.uk
 
 Maze is a simple Sass based responsive grid framework. Maze is the result of my early experimentation with Sass and the frustration of using existing grids and frameworks.
 
 * Demo: http://www.get-maze.co.uk/maze/
 * Homepage: http://www.get-maze.co.uk
-* Twitter: https://twitter.com/cathy_dutton
 
-## Features
+
+### Support
+If you have any questions get in touch:
+
+-   [info@cathydutton.co.uk](mailto:info@cathydutton.co.uk)
+-   [@cathydutton](http://twitter.com/cathydutton)
+
+
+### Features
 
 * HTML5.
 * Cross-browser compatible (Chrome, Firefox, IE9+, Safari).
@@ -14,4 +24,34 @@ Maze is a simple Sass based responsive grid framework. Maze is the result of my 
 * The latest [Modernizr](http://modernizr.com/) build for feature detection.
 * Customisable CSS Media Queries.
 * Customisable Layout Blocks.
+
+### Log
+
+V1.0.1 (14/01/2014) - Upload first version for testing.
+V1.0.2 (19/01/2014) - Reastructure Sass folder.
+
+
+### License
+```
+The MIT License (MIT)
+
+Copyright (c) [2014] [Cathy Dutton]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
