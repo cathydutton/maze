@@ -1,0 +1,24 @@
+/* ==========================================================================
+
+// Main Content  File 
+// Website theme styles.
+
+/* ========================================================================== */
+
+body {
+background:$grey;
+font-family: 'Ariel', sans-serif;
+text-align:center;	
+color:$brown;
+}
+
+.container{color:$white;}
+
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+

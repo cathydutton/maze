@@ -1,0 +1,225 @@
+/* ==========================================================================
+
+// Layout File
+// Layout file used to create the page structure.
+
+/* ========================================================================== */
+
+*,
+*:after,
+*:before {
+  @include box-size;
+}
+
+.wrapper {
+@include clear;
+max-width: $break-wide;
+min-width: $break-mobile;
+margin: 30px auto;
+padding:10px;
+}
+.container {
+@include clear;
+width: 1;
+margin: 10px 0;
+}
+
+/* Collapse Right Layout */ 
+
+.logo {
+@include grid(3);
+@include break(tablet, 12);
+}
+.search {
+@include grid(6);
+@include break(tablet, 6);
+}
+.social-share {
+@include grid(3);
+@include break(tablet, 6);
+}
+
+.banner {
+@include grid(12);
+@include break(tablet, 12);
+}
+ 
+.tab {
+@include grid(3);
+@include break(tablet, 6);
+@include break(mobile, 12);
+}
+.content {
+@include grid(6);
+@include break(tablet, 12);
+}
+.content-two {
+@include grid(4);
+@include break(tablet, 12);
+}
+.tabs {
+@include grid(3);
+@include break(tablet, 6);
+}
+.two {
+@include grid(2);
+@include break(tablet, 6);
+}
+.one {
+@include grid(1);
+@include break(mobile, 6);
+}
+.footer-links {
+@include grid(10);
+@include break(tablet, 12);
+}
+.social {
+@include grid(1);
+@include break(tablet, 6);
+}
+
+
+
+
+
+
+
+
+
+/* collapse Left Layout */ 
+
+.right-logo {
+@include grid(3, $fold:"right");
+@include break(tablet, 12);
+}
+.right-search {
+@include grid(6, $fold:"right");
+@include break(tablet, 6);
+}
+.right-social-share {
+@include grid(3, $fold:"right");
+@include break(tablet, 6);
+}
+.right-banner {
+@include grid(12);
+@include break(tablet, 12);
+}
+ 
+.right-tab {
+@include grid(3, $fold:"right");
+@include break(tablet, 6);
+@include break(mobile, 12);
+}
+.right-content {
+@include grid(6, $fold:"right");
+@include break(tablet, 12);
+}
+.right-content-two {
+@include grid(4, $fold:"right");
+@include break(tablet, 12);
+}
+.right-tabs {
+@include grid(3, $fold:"right");
+@include break(tablet, 6);
+}
+.right-two {
+@include grid(2, $fold:"right");
+@include break(tablet, 6);
+}
+.right-one {
+@include grid(1);
+@include break(mobile, 6);
+}
+.right-footer-links {
+@include grid(10, $fold:"right");
+@include break(tablet, 12);
+}
+.right-social {
+@include grid(1, $fold:"right");
+@include break(tablet, 6);
+}
+
+
+
+/* Push Layout */ 
+
+.three {
+@include grid(3, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.four {
+@include grid(4, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.five {
+@include grid(5, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.six {
+@include grid(6, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.seven {
+@include grid(7, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.eight {
+@include grid(8, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+.nine {
+@include grid(9, $fold:"right");
+
+@include break(mobile, 6);
+}
+
+
+.push2 {
+@include grid(2, 2);
+
+@include break(mobile, 6);
+}
+.push3 {
+@include grid(2, 3);
+
+@include break(mobile, 6);
+}
+.push4 {
+@include grid(2, 4);
+
+@include break(mobile, 6);
+}
+
+.push5 {
+@include grid(2,  5);
+
+@include break(mobile, 6);
+}
+
+.push6 {
+@include grid(2,  6);
+
+@include break(mobile, 6);
+}
+
+.push7 {
+@include grid(2,  7);
+
+@include break(mobile, 6);
+}
+
+
+
+

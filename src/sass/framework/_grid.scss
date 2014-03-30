@@ -1,0 +1,50 @@
+/* ==========================================================================
+
+// Grid File
+// Grid set up using the Maze Framework www.get-maze.co.uk.
+
+/* VARIABLES
+========================================================================== */
+
+$grid-columns: 12;
+$unit: (100%  / $grid-columns);
+$gutter: 2% !default;
+$push: 0 !default;
+
+/* MIXIN
+========================================================================== */
+
+@mixin grid($col, $fold:"left", $push:$push) {
+	@include transition;
+	float: #{$fold};
+        background: $base-color;
+        cursor:pointer;
+        padding:20px;
+	width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
+	
+
+
+        @if $push > 1 {
+		margin-left: (($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
+	}
+
+        
+	
+	 @if $fold == left {
+                                margin-right: $gutter;
+                                &:last-child {
+                                                margin-right: 0;
+                                }
+                }
+                @if $fold == right {
+                                margin-left: $gutter;
+                                &:last-child {
+                                                margin-left: 0;
+                                }
+                }
+
+                &:hover {
+ background: $brown;
+ color:$white;
+}
+}

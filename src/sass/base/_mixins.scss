@@ -1,0 +1,35 @@
+/* ==========================================================================
+
+// Mixin File
+// Usefull mixins & re-usable code.
+
+/* BOX SIZEING -
+========================================================================== */
+
+@mixin box-size {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(boxsizing.htc);
+}
+
+@mixin clear{
+	position:relative;
+	overflow:hidden;
+}
+
+
+/* CSS3 PROPERTIES -
+========================================================================== */
+
+@mixin transition {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+@mixin fade {
+	-moz-transition: all 1s ease-in;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
