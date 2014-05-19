@@ -16,14 +16,13 @@ $break-mobile: 480px;
 @mixin break($media, $col) {
 	@if $media == tablet {
 		@media only screen and (max-width:$break-tablet) {
-			width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
+			width: (($unit * $col) - $gutter ) ;
 			margin: $gutter / 2;
-			margin-left: 0;
 		}
 	}
 	@else if $media == mobile {
 		@media only screen and (max-width:$break-mobile) {
-			width: (($unit * $col) - $gutter ) + ( $gutter / ( $grid-columns / $col) );
+			width: (($unit * $col) - $gutter ) ;
 			margin: $gutter / 2;
 		}
 	}

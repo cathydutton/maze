@@ -9,6 +9,7 @@
 *:after,
 *:before {
   @include box-size;
+ /* overflow-y: scroll;*/
 }
 
 .wrapper {
