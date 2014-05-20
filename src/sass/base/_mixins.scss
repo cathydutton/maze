@@ -13,9 +13,12 @@
 	*behavior: url(boxsizing.htc);
 }
 
-@mixin clear{
-	position:relative;
-	overflow:hidden;
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 

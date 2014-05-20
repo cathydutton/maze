@@ -9,18 +9,23 @@
 *:after,
 *:before {
   @include box-size;
- /* overflow-y: scroll;*/
+
+}
+
+body{
+	overflow-y: scroll;
 }
 
 .wrapper {
-@include clear;
+@include clearfix;
 max-width: $break-wide;
 min-width: $break-mobile;
 margin: 30px auto;
 padding:10px;
 }
+
 .container {
-@include clear;
+@include clearfix;
 width: 1;
 margin: 10px 0;
 }
