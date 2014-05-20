@@ -19,7 +19,7 @@ body{
 .wrapper {
 @include clearfix;
 max-width: $break-wide;
-min-width: $break-mobile;
+min-width: ($break-mobile - 20px);
 margin: 30px auto;
 padding:10px;
 }
@@ -150,78 +150,78 @@ margin: 10px 0;
 /* Push Layout */ 
 
 .three {
-@include grid(3, $fold:"right");
+@include grid(3);
 
 @include break(mobile, 6);
 }
 
 .four {
-@include grid(4, $fold:"right");
+@include grid(4);
 
 @include break(mobile, 6);
 }
 
 .five {
-@include grid(5, $fold:"right");
+@include grid(5);
 
 @include break(mobile, 6);
 }
 
 .six {
-@include grid(6, $fold:"right");
+@include grid(6);
 
 @include break(mobile, 6);
 }
 
 .seven {
-@include grid(7, $fold:"right");
+@include grid(7);
 
 @include break(mobile, 6);
 }
 
 .eight {
-@include grid(8, $fold:"right");
+@include grid(8);
 
 @include break(mobile, 6);
 }
 
 .nine {
-@include grid(9, $fold:"right");
+@include grid(9);
 
 @include break(mobile, 6);
 }
 
 
 .push2 {
-@include grid(2, 2);
+@include grid(2, $push:2);
 
 @include break(mobile, 6);
 }
 .push3 {
-@include grid(2, 3);
+@include grid(2, $push:3);
 
 @include break(mobile, 6);
 }
 .push4 {
-@include grid(2, 4);
+@include grid(2, $push:4);
 
 @include break(mobile, 6);
 }
 
 .push5 {
-@include grid(2,  5);
+@include grid(2, $push:5);
 
 @include break(mobile, 6);
 }
 
 .push6 {
-@include grid(2,  6);
+@include grid(2, $push:6);
 
 @include break(mobile, 6);
 }
 
 .push7 {
-@include grid(2,  7);
+@include grid(2, $push:7);
 
 @include break(mobile, 6);
 }
