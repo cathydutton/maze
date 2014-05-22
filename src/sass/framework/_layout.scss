@@ -26,7 +26,7 @@ body{
 
 .container {
 	@include clearfix;
-	width: 1;
+	width: 100%;
 	margin: 10px 0;
 }
 
@@ -65,7 +65,7 @@ body{
 
 .content-two {
 	@include grid(4);
-	include break(tablet, 12);
+	@include break(tablet, 12);
 }
 
 .tabs {
