@@ -25,6 +25,37 @@ If you have any questions get in touch:
 * Customisable CSS Media Queries.
 * Customisable Layout Blocks.
 
+
+### Guide
+
+To set up a basic grid assign each column in the grid a width based on a 12 col layout…
+
+@include grid(3)  -  spans 3 columns 
+@include grid(6)  -  spans 6 columns 
+
+Margin:
+
+The grid’s default settings add a margin 0f 2% to the left. To alter this, add a value to the optional argument in the mixin…
+
+@include grid(8, $margin:0);) or
+@include grid(8, $margin:4%);)
+
+Note: The margin needs to be consistent across each row.
+
+Breakpoints:
+
+Breakpoints are included in the same way as the main grid...
+
+ @include break(desktop, 4);  - Change with to 4 columns at desktop
+ @include break(tablet, 12);   - Change with to 12 columns at tablet
+
+Fold/Float Direction:
+
+By default columns will float left and collapse from the right hand side of the page. To change this to right floated columns which collapse from the left add the value ’right’ to the optional argument in the grid mixin..
+
+grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse from the left.
+
+
 ### Log
 
 V1.0.1 (14/01/2014) - Upload first version for testing.
