@@ -22,7 +22,6 @@ If you have any questions get in touch:
 * Cross-browser compatible (Chrome, Firefox, IE9+, Safari).
 * Designed with progressive enhancement in mind.
 * The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
 * Customisable CSS Media Queries.
 * Customisable Layout Blocks.
 
