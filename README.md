@@ -1,7 +1,5 @@
 # Maze
-By Cathy Dutton
-http://www.cathydutton.co.uk
-http://www.cathydutton.co.uk/css/maze-responsive-grid-framework
+
 
 Maze is a simple Sass based responsive grid framework. Maze is the result of my early experimentation with Sass and the frustration of using existing grids and frameworks.
 
