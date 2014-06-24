@@ -31,7 +31,7 @@ To set up a basic grid assign each column in the grid a width based on a 12 col 
 @include grid(3)  -  spans 3 columns 
 @include grid(6)  -  spans 6 columns 
 
-Margin:
+#### Margin:
 
 The grid’s default settings add a margin 0f 2% to the left. To alter this, add a value to the optional argument in the mixin…
 
@@ -40,14 +40,14 @@ The grid’s default settings add a margin 0f 2% to the left. To alter this, add
 
 Note: The margin needs to be consistent across each row.
 
-Breakpoints:
+#### Breakpoints:
 
 Breakpoints are included in the same way as the main grid...
 
  @include break(desktop, 4);  - Change with to 4 columns at desktop
  @include break(tablet, 12);   - Change with to 12 columns at tablet
 
-Fold/Float Direction:
+#### Fold/Float Direction:
 
 By default columns will float left and collapse from the right hand side of the page. To change this to right floated columns which collapse from the left add the value ’right’ to the optional argument in the grid mixin..
 
@@ -56,10 +56,10 @@ grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse fro
 
 ### Log
 
-V1.0.1 (14/01/2014) - Upload first version for testing.
-V1.0.2 (19/01/2014) - Reastructure Sass folder.
-V1.1.0 (30/03/2014) - Add option to collapse columns from the left.
-V1.1.1 (20/05/2014) - Adjust the Push code, Add default vertical scroll bar and min width property.
+* V1.0.1 (14/01/2014) - Upload first version for testing.
+* V1.0.2 (19/01/2014) - Reastructure Sass folder.
+* V1.1.0 (30/03/2014) - Add option to collapse columns from the left.
+* V1.1.1 (20/05/2014) - Adjust the Push code, Add default vertical scroll bar and min width property.
 
 ### License
 ```
