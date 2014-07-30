@@ -5,6 +5,7 @@ Maze is a simple Sass based responsive grid framework. Maze is the result of my 
 
 * Demo: http://www.get-maze.co.uk/maze/
 * Homepage: http://www.get-maze.co.uk
+* Documentation: http://www.cathydutton.co.uk/maze-responsive-grid-framework
 
 
 ### Support
