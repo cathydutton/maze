@@ -1,12 +1,4 @@
-/*!
- * Maze
- * Responsive Framework
- * http://get-maze.co.uk
- * @author Cathy Dutton
- * @version 1.1.0
- * Copyright 20134. MIT licensed.
- */
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,900italic,900,500italic,700,700italic);
 /* ==========================================================================
 
   	Bear Scss Structure 
@@ -16,17 +8,11 @@
 
 /* VENDOR - Default fall backs & external .scss files.
 ========================================================================== */
-/* ==========================================================================
-
-// Normalize  File 
-    
-/* ========================================================================== */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,900italic,900,500italic,700,700italic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -419,58 +405,16 @@ th {
 
 /* Base - Base variable file along with starting points mixins & placeholders.
 ========================================================================== */
-/* ==========================================================================
-
-// Base File
-// Set up all global variables and naming conventions.
-
-    
-
-/* COLOR DEFAULTS
-========================================================================== */
 /* Colours -  Defined only once */
 /* Mark-up - selectors used throughout site. */
-/* ==========================================================================
-
-// Mixin File
-// Usefull mixins & re-usable code.
-
-/* BOX SIZEING -
-========================================================================== */
 /* CSS3 PROPERTIES -
 ========================================================================== */
-/* ==========================================================================
-
-// Placeholder File
-// Placeholder styles to be included in rendered selectors. Un-used placeholders will not be rendered in the build css file.
-
-*/
 /* FRAMEWORK - Structure & layout files including the Maze grid function.
-========================================================================== */
-/* ==========================================================================
-
-// Grid File
-// Grid set up using the Maze Framework www.get-maze.co.uk.
-
-/* VARIABLES
 ========================================================================== */
 /* MIXIN
 ========================================================================== */
-/* ==========================================================================
-
-// Breakpoint File
-// Add new or make changes to existing breakpoints.
-
-/* VARIABLES -
-========================================================================== */
 /* MIXIN -
 ========================================================================== */
-/* ==========================================================================
-
-// Layout File
-// Layout file used to create the page structure.
-
-/* ========================================================================== */
 *,
 *:after,
 *:before {
@@ -1120,6 +1064,313 @@ body {
   }
 }
 
+/* Gutters */
+.no-logo {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 25%;
+  margin-right: 0;
+}
+.no-logo:last-child {
+  margin-right: 0;
+}
+.no-logo:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-logo {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-search {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 50%;
+  margin-right: 0;
+}
+.no-search:last-child {
+  margin-right: 0;
+}
+.no-search:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-search {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+.no-social-share {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 25%;
+  margin-right: 0;
+}
+.no-social-share:last-child {
+  margin-right: 0;
+}
+.no-social-share:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-social-share {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+.no-banner {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  margin-right: 2%;
+}
+.no-banner:last-child {
+  margin-right: 0;
+}
+.no-banner:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-banner {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-tab {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 22%;
+  margin-right: 4%;
+}
+.no-tab:last-child {
+  margin-right: 0;
+}
+.no-tab:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-tab {
+    width: 48%;
+    margin: 1%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .no-tab {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-content {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 50%;
+  margin-right: 0;
+}
+.no-content:last-child {
+  margin-right: 0;
+}
+.no-content:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-content {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-content-two {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 32%;
+  margin-right: 2%;
+}
+.no-content-two:last-child {
+  margin-right: 0;
+}
+.no-content-two:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-content-two {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-tabs {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 25%;
+  margin-right: 0;
+}
+.no-tabs:last-child {
+  margin-right: 0;
+}
+.no-tabs:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-tabs {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+.no-two {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 12.5%;
+  margin-right: 5%;
+}
+.no-two:last-child {
+  margin-right: 0;
+}
+.no-two:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-two {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+.no-one {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 6.5%;
+  margin-right: 2%;
+}
+.no-one:last-child {
+  margin-right: 0;
+}
+.no-one:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  .no-one {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
+.no-footer-links {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 83.33333%;
+  margin-right: 0;
+}
+.no-footer-links:last-child {
+  margin-right: 0;
+}
+.no-footer-links:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-footer-links {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.no-social {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 8.33333%;
+  margin-right: 0;
+}
+.no-social:last-child {
+  margin-right: 0;
+}
+.no-social:hover {
+  background: #312a1e;
+  color: white;
+}
+@media only screen and (max-width: 767px) {
+  .no-social {
+    width: 48%;
+    margin: 1%;
+  }
+}
+
 /* Push Layout */
 .three {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1454,26 +1705,8 @@ body {
 
 /* MODULES - Individual site elements.
 ========================================================================== */
-/* ==========================================================================
-
-// Buttons File
-// Button styles and placeholder css.
-
-*/
-/* ==========================================================================
-
-// Lists File 
-// Default list styles.
-
-/* ========================================================================== */
 /* Theme - Theme styles for each area of the site.
 ========================================================================== */
-/* ==========================================================================
-
-// Main Content  File 
-// Website theme styles.
-
-/* ========================================================================== */
 body {
   background: #f3f3f3;
   font-family: 'Ariel', sans-serif;
@@ -1492,24 +1725,6 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* ==========================================================================
-
-// Header File 
-// Theme styles for the website header.
-
-/* ========================================================================== */
-/* ==========================================================================
-
-// Nav File 
-// Theme styles for the website nav.
-
-/* ========================================================================== */
-/* ==========================================================================
-
-// Main Content  File 
-// Website theme styles.
-
-/* ========================================================================== */
 body {
   background: #f3f3f3;
   font-family: 'Ariel', sans-serif;
@@ -1528,17 +1743,5 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* ==========================================================================
-
-// Footer File 
-// Theme styles for the website footer.
-
-/* ========================================================================== */
-/* ==========================================================================
-
-// Shame File 
-// Styles to be fixed or re-factured at a later date.
-
-/* ========================================================================== */
 /* WEB FONTS - Google web font include.
 ========================================================================== */

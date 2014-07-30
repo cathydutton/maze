@@ -94,13 +94,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
 /* collapse Left Layout */ 
 
 .right-logo {
@@ -164,6 +157,70 @@ body{
 	@include break(tablet, 6);
 }
 
+
+
+/* Gutters */ 
+
+.no-logo {
+	@include grid(3, $margin:0);
+	@include break(tablet, 12);
+}
+
+.no-search {
+	@include grid(6, $margin:0);
+	@include break(tablet, 6);
+}
+
+.no-social-share {
+	@include grid(3, $margin:0);
+	@include break(tablet, 6);
+}
+
+.no-banner {
+	@include grid(12);
+	@include break(tablet, 12);
+}
+ 
+.no-tab {
+	@include grid(3, $margin:4%);
+	@include break(tablet, 6);
+	@include break(mobile, 12);
+}
+
+.no-content {
+	@include grid(6, $margin:0);
+	@include break(tablet, 12);
+}
+
+.no-content-two {
+	@include grid(4);
+	@include break(tablet, 12);
+}
+
+.no-tabs {
+	@include grid(3, $margin:0);
+	@include break(tablet, 6);
+}
+
+.no-two {
+	@include grid(2, $margin:5%);
+	@include break(tablet, 6);
+}
+
+.no-one {
+	@include grid(1);
+	@include break(mobile, 6);
+}
+
+.no-footer-links {
+	@include grid(10, $margin:0);
+	@include break(tablet, 12);
+}
+
+.no-social {
+	@include grid(1, $margin:0);
+	@include break(tablet, 6);
+}
 
 
 /* Push Layout */ 
