@@ -60,6 +60,7 @@ grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse fro
 * V1.0.2 (19/01/2014) - Reastructure Sass folder.
 * V1.1.0 (30/03/2014) - Add option to collapse columns from the left.
 * V1.1.1 (20/05/2014) - Adjust the Push code, Add default vertical scroll bar and min width property.
+* V1.1.2 (29/06/2014) - Add the option to over-ride the default margin variable in an optional argument.
 
 ### License
 ```
