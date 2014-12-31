@@ -16,6 +16,7 @@ $push: 0 !default;
 
 @mixin grid($col, $fold:"left", $push:$push, $margin:$gutter) {
         @include transition;
+        $reverse-fold:if($fold==left,"right","left");
         float:#{$fold};
         background: $base-color;
         cursor: pointer;
@@ -27,22 +28,11 @@ $push: 0 !default;
                 margin-left: (($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
         }
        
-        @if $fold == left {
-                margin-right: $margin;
-                
-                        &:last-child {
-                                margin-right: 0;
-                        }
+        margin-#{$reverse-fold}:$margin;
+        
+        &:last-child {
+                margin-#{$reverse-fold}:0;
         }
-       
-        @if $fold == right {
-                margin-left: $margin;
-
-                         &:last-child {
-                         margin-left: 0;
-                        }
-        }
-      
         &:hover {
                 background: $brown;
                 color: $white;
