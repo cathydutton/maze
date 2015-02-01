@@ -1,6 +1,6 @@
 .sass-cache
 node_modules
-Gruntfile.js
+gulpfile.js
 package.json
 
 # Ignore source folder - un-comment for live deployment.

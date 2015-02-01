@@ -6,38 +6,60 @@
 /* VARIABLES
 ========================================================================== */
 
-$grid-columns: 12;
-$unit: (100%  / $grid-columns);
+/* Defaults */
+
+$total-grid-columns: 12!default;
 $gutter: 2% !default;
 $push: 0 !default;
+
+/* Single coloumn span */
+
+$grid: 12!default;
+$margin: $gutter;
+
+$break-wide: 1180px;
+$break-desktop: 990px;
+$break-tablet: 767px;
+$break-mobile: 360px;
+
+
+/* Widths */
+
+/*$max-width: $break-wide + $margin;*/
+$max-width: 100% + $margin;
+$min-width: ($break-mobile - 20px);
+
 
 /* MIXIN
 ========================================================================== */
 
-@mixin grid($col, $fold:"left", $push:$push, $margin:$gutter) {
+@mixin grid($col, $fold:"left", $push:$push, $grid:$total-grid-columns, $margin:$gutter) {
+
         @include transition;
-        $reverse-fold:if($fold==left,"right","left");
         float:#{$fold};
         background: $base-color;
         cursor: pointer;
         padding: 20px;
-        width: (($unit * $col) - $margin ) + ( $margin / ( $grid-columns / $col) );
-   
+        width: (100% / ($grid / $col)) - $margin ;
+
+         @if $push < 1 {
+                margin-left: ($margin/2);
+                margin-right: ($margin/2);
+        }  
+       
        
         @if $push > 1 {
-                margin-left: (($unit * $push) ) + ( $gutter / ( $grid-columns / $push) );
-        }
+                margin-#{$fold}: (((100%  / $grid) * $push) ) + ( $gutter / ( $grid / $push) );
+        } 
        
-        margin-#{$reverse-fold}:$margin;
-        
-        &:last-child {
-                margin-#{$reverse-fold}:0;
-        }
+
+
         &:hover {
                 background: $brown;
                 color: $white;
         }
 }
+
 
 
 

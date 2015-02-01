@@ -18,10 +18,9 @@ body{
 
 .wrapper {
 	@include clearfix;
-	max-width: $break-wide;
-	min-width: ($break-mobile - 20px);
+	max-width: $max-width;
+	min-width: $min-width;
 	margin: 30px auto;
-	padding:10px;
 }
 
 .container {
@@ -30,7 +29,36 @@ body{
 	margin: 10px 0;
 }
 
-/* Collapse Right Layout */ 
+/* EQUAL
+============================================================== */
+
+.equal-five {
+	@include grid(1, $grid:5);
+	@include break(mobile, 12);
+}
+
+.equal-seven {
+	@include grid(1, $grid:7);
+	@include break(tablet, 12);
+}
+
+.four-eight {
+	@include grid(4, $grid:8);
+	@include break(mobile, 12);
+}
+
+.equal-eight {
+	@include grid(1, $grid:8);
+	@include break(mobile, 12);
+}
+
+.equal-nine {
+	@include grid(1, $grid:9);
+	@include break(tablet, 12);
+}
+
+/* RIGHT
+============================================================== */
 
 .logo {
 	@include grid(3);
@@ -94,7 +122,8 @@ body{
 }
 
 
-/* collapse Left Layout */ 
+/* LEFT
+============================================================== */
 
 .right-logo {
 	@include grid(3, $fold:"right");
@@ -158,8 +187,8 @@ body{
 }
 
 
-
-/* Gutters */ 
+/* GUTTERS
+============================================================== */
 
 .no-logo {
 	@include grid(3, $margin:0);
@@ -223,7 +252,8 @@ body{
 }
 
 
-/* Push Layout */ 
+/* PUSH
+============================================================== */
 
 .three {
 	@include grid(3);
