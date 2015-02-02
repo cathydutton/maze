@@ -29,33 +29,6 @@ body{
 	margin: 10px 0;
 }
 
-/* EQUAL
-============================================================== */
-
-.equal-five {
-	@include grid(1, $grid:5);
-	@include break(mobile, 12);
-}
-
-.equal-seven {
-	@include grid(1, $grid:7);
-	@include break(tablet, 12);
-}
-
-.four-eight {
-	@include grid(4, $grid:8);
-	@include break(mobile, 12);
-}
-
-.equal-eight {
-	@include grid(1, $grid:8);
-	@include break(mobile, 12);
-}
-
-.equal-nine {
-	@include grid(1, $grid:9);
-	@include break(tablet, 12);
-}
 
 /* RIGHT
 ============================================================== */
@@ -187,70 +160,6 @@ body{
 }
 
 
-/* GUTTERS
-============================================================== */
-
-.no-logo {
-	@include grid(3, $margin:0);
-	@include break(tablet, 12);
-}
-
-.no-search {
-	@include grid(6, $margin:0);
-	@include break(tablet, 6);
-}
-
-.no-social-share {
-	@include grid(3, $margin:0);
-	@include break(tablet, 6);
-}
-
-.no-banner {
-	@include grid(12);
-	@include break(tablet, 12);
-}
- 
-.no-tab {
-	@include grid(3, $margin:4%);
-	@include break(tablet, 6);
-	@include break(mobile, 12);
-}
-
-.no-content {
-	@include grid(6, $margin:0);
-	@include break(tablet, 12);
-}
-
-.no-content-two {
-	@include grid(4);
-	@include break(tablet, 12);
-}
-
-.no-tabs {
-	@include grid(3, $margin:0);
-	@include break(tablet, 6);
-}
-
-.no-two {
-	@include grid(2, $margin:5%);
-	@include break(tablet, 6);
-}
-
-.no-one {
-	@include grid(1);
-	@include break(mobile, 6);
-}
-
-.no-footer-links {
-	@include grid(10, $margin:0);
-	@include break(tablet, 12);
-}
-
-.no-social {
-	@include grid(1, $margin:0);
-	@include break(tablet, 6);
-}
-
 
 /* PUSH
 ============================================================== */
@@ -319,6 +228,50 @@ body{
 	@include grid(2, $push:7);
 	@include break(mobile, 6);
 }
+
+/* EQUAL
+============================================================== */
+
+.equal-five {
+	@include grid(1, $grid-size:5);
+	@include break(mobile, 12);
+}
+
+.equal-seven {
+	@include grid(1, $grid-size:7);
+	@include break(tablet, 12);
+}
+
+.four-eight {
+	@include grid(4, $grid-size:8);
+	@include break(mobile, 12);
+}
+
+.equal-eight {
+	@include grid(1, $grid-size:8);
+	@include break(mobile, 6);
+}
+
+.equal-nine {
+	@include grid(1, $grid-size:9);
+	@include break(tablet, 12);
+}
+
+
+/* MARGIN
+============================================================== */
+
+.margin-content-two {
+	@include grid(4, $margin: 15%);
+	@include break(mobile, 12);
+}
+
+.margin-tabs {
+	@include grid(3, $margin: 5%);
+	@include break(mobile, 12);
+}
+
+
 
 
 

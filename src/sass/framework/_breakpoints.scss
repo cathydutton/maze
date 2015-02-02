@@ -10,30 +10,32 @@
 /* MIXIN -
 ========================================================================== */
 
-@mixin break($media, $col) {
+@mixin break($media, $col-span, $grid-size:$total-grid-columns) {
 
 	@if $media == desktop {
 
 		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid) * $col) - $margin ) ;
-			margin: $margin / 2;
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
 		}
 	}
 
-	@if $media == tablet {
+	@else if $media == tablet {
 
 		@media only screen and (max-width:$break-tablet) {
-			width: (((100%  / $grid) * $col) - $margin ) ;
-			margin: $margin / 2;
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
 		}
 	}
 
 	@else if $media == mobile {
 
 		@media only screen and (max-width:$break-mobile) {
-			width: (((100%  / $grid) * $col) - $margin ) ;
-			margin: $margin / 2;
+			width: (((100%  / $grid-size) * $col-span) - $gutter ) ;
+			margin: $gutter / 2;
 		}
 	}
 
 }
+
+

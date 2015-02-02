@@ -1,14 +1,12 @@
 /* ==========================================================================
 
-  	Bear Scss Structure 
+  	Maze Responsibe Grid 
  	Author: Cathy Dutton - http://www.cathydutton.co.uk
   	Version: 0.1.1 
 
 
 /* VENDOR - Default fall backs & external .scss files.
 ========================================================================== */
-
-	@import 'vendor/_normalize.scss';
 
 
 /* Base - Base variable file along with starting points mixins & placeholders.
@@ -18,7 +16,6 @@
 	@import 'base/_mixins.scss';
 	@import 'base/_placeholders.scss';
 	
-
 
 /* FRAMEWORK - Structure & layout files including the Maze grid function.
 ========================================================================== */
