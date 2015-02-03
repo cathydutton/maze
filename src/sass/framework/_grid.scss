@@ -18,9 +18,14 @@ $break-desktop: 990px;
 $break-tablet: 767px;
 $break-mobile: 400px;
 
-/* Widths */
-$max-width: $break-wide;
-$min-width: ($break-mobile - 20px);
+/* Min & Max Widths */
+
+$gutter-unit:  $gutter / 1%; 
+$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;
+
+
+$max-width: $break-wide + $wrapper-gutter-percentage;
+$min-width: $break-mobile - 20px;
 
 
 /* MIXIN
@@ -30,7 +35,7 @@ $min-width: ($break-mobile - 20px);
 
     @include transition;
         float:#{$fold};
-        background: $base-color;
+        background: $orange;
         cursor: pointer;
         padding: 20px;
         width: (100% / ($grid-size / $col-span)) - $margin ;
@@ -45,7 +50,7 @@ $min-width: ($break-mobile - 20px);
         } 
        
         &:hover {
-            background: $brown;
+            background: $light-grey;
             color: $white;
         }
 }
