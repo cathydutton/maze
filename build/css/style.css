@@ -46,7 +46,11 @@
 ========================================================================== */
 /* Grid Defaults */
 /* Breakpoints */
-/* Widths */
+/* Calculate Min & Max Widths */
+/* Strip percentage from gutter */
+/* Work out 1% of $break-wide */
+/* Add gutter value to $max-width so that each row is equal to $break-wide */
+/* Set min width with scroll bar */
 /* MIXIN
 ========================================================================== */
 /* ==========================================================================
@@ -78,7 +82,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1180px;
+  max-width: 1203.6px;
   min-width: 380px;
   margin: 30px auto;
 }

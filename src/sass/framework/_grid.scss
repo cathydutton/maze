@@ -18,14 +18,13 @@ $break-desktop: 990px;
 $break-tablet: 767px;
 $break-mobile: 400px;
 
-/* Min & Max Widths */
+/* Calculate Min & Max Widths */
 
-$gutter-unit:  $gutter / 1%; 
-$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;
+$gutter-unit:  $gutter / 1%;   /* Strip percentage from gutter */
+$wrapper-gutter-percentage: ($break-wide / 100)  * $gutter-unit;   /* Work out 1% of $break-wide */
 
-
-$max-width: $break-wide + $wrapper-gutter-percentage;
-$min-width: $break-mobile - 20px;
+$max-width: $break-wide + $wrapper-gutter-percentage; /* Add gutter value to $max-width so that each row is equal to $break-wide */
+$min-width: $break-mobile - 20px; /* Set min width with scroll bar */
 
 
 /* MIXIN
@@ -50,10 +49,11 @@ $min-width: $break-mobile - 20px;
         } 
        
         &:hover {
-            background: $light-grey;
+            background: $brown;
             color: $white;
         }
 }
+
 
 
 
