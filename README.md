@@ -19,7 +19,7 @@ If you have any questions get in touch:
 
 * Semantic markup. 
 * Cross-browser compatible (Chrome, Firefox, IE9+, Safari, polyfills can be added for ie8 and 7).
-* Configurable column layout, traditional &amp; ratio.
+* Configurable column layout, Traditional &amp; Ratio.
 * Configurable breakpoints.
 * Configurable gutter.
 * Optional push values.
@@ -38,7 +38,7 @@ Include the grid mixin on each element in a row, adding up to the $$total-grid-c
 When the design does not fit a traditional coloum layout ratios can be used to create the grid. the $grid-size mixin argument overrides the $total-grid-columns variable.
 
 ```
-@include grid(2, $grid-size:5); - Size two of Five
+@include grid(2, $grid-size:5); - Size Two of Five
 @include grid(3, $grid-size:8); - Size Three of Five
 ```
 
@@ -46,8 +46,8 @@ When the design does not fit a traditional coloum layout ratios can be used to c
 
 The grid’s default margin is set using the $gutter variable. To override this on any row add a value to the optional argument in the mixin…
 ```
-@include grid(8, $margin:0);) or
-@include grid(8, $margin:4%);)
+@include grid(8, $margin:0) or
+@include grid(8, $margin:4%)
 ```
 Note: The margin needs to be consistent across each row.
 
