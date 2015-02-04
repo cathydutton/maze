@@ -229,30 +229,35 @@ body{
 	@include break(mobile, 6);
 }
 
-/* EQUAL
+/* RATIO
 ============================================================== */
 
-.equal-five {
-	@include grid(1, $grid-size:5);
+.ratio-two-five {
+	@include grid(2, $grid-size:5);
 	@include break(mobile, 12);
 }
 
-.equal-seven {
+.ratio-three-five {
+	@include grid(3, $grid-size:5);
+	@include break(mobile, 12);
+}
+
+.ratio-seven {
 	@include grid(1, $grid-size:7);
 	@include break(tablet, 12);
 }
 
-.four-eight {
+.ratio-four-eight {
 	@include grid(4, $grid-size:8);
 	@include break(mobile, 12);
 }
 
-.equal-eight {
+.ratio-eight {
 	@include grid(1, $grid-size:8);
 	@include break(mobile, 6);
 }
 
-.equal-nine {
+.ratio-nine {
 	@include grid(1, $grid-size:9);
 	@include break(tablet, 12);
 }

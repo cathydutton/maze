@@ -1,7 +1,7 @@
 # Maze
 
 
-Maze is a simple Sass based responsive grid framework. Maze is the result of my early experimentation with Sass and the frustration of using existing grids and frameworks.
+Maze is a responsive grid built using Sass and HTML5, the grid is easily customisable with editable options for grid columns, gutter widths, break points and push values. Each content block reacts differently allowing for all content types and devices. 
 
 * Demo: http://www.get-maze.co.uk/maze/
 * Homepage: http://www.get-maze.co.uk
@@ -17,24 +17,34 @@ If you have any questions get in touch:
 
 ### Features
 
-* HTML5.
-* Cross-browser compatible (Chrome, Firefox, IE9+, Safari).
-* Designed with progressive enhancement in mind.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* Customisable CSS Media Queries.
-* Customisable Layout Blocks.
+* Semantic markup. 
+* Cross-browser compatible (Chrome, Firefox, IE9+, Safari, polyfills can be added for ie8 and 7).
+* Configurable column layout, traditional &amp; ratio.
+* Configurable breakpoints.
+* Configurable gutter.
+* Optional push values.
 
 
 ### Guide
 
-To set up a basic grid assign each column in the grid a width based on a 12 col layout…
+Include the grid mixin on each element in a row, adding up to the $$total-grid-columns variable.
 ```
 @include grid(3)  -  spans 3 columns 
 @include grid(6)  -  spans 6 columns 
 ```
+
+#### Grid Ratio:
+
+When the design does not fit a traditional coloum layout ratios can be used to create the grid. the $grid-size mixin argument overrides the $total-grid-columns variable.
+
+```
+@include grid(2, $grid-size:5); - Size two of Five
+@include grid(3, $grid-size:8); - Size Three of Five
+```
+
 #### Margin:
 
-The grid’s default settings add a margin 0f 2% to the left. To alter this, add a value to the optional argument in the mixin…
+The grid’s default margin is set using the $gutter variable. To override this on any row add a value to the optional argument in the mixin…
 ```
 @include grid(8, $margin:0);) or
 @include grid(8, $margin:4%);)
@@ -45,15 +55,17 @@ Note: The margin needs to be consistent across each row.
 
 Breakpoints are included in the same way as the main grid...
 ```
- @include break(desktop, 4);  - Change with to 4 columns at desktop
- @include break(tablet, 12);   - Change with to 12 columns at tablet
+ @include grid(3)            - Desktop spans 3 columns
+ @include break(tablet, 6);  - Tablet spans 6 columns
+ @include break(mobile, 12);   - Mobile spans 12 columns
 ```
 #### Fold/Float Direction:
 
 By default columns will float left and collapse from the right hand side of the page. To change this to right floated columns which collapse from the left add the value ’right’ to the optional argument in the grid mixin..
 ```
-grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse from the left.
+grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse from the left
 ```
+
 ### Log
 
 * V1.0.1 (14/01/2014) - Upload first version for testing.
@@ -61,6 +73,7 @@ grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse fro
 * V1.1.0 (30/03/2014) - Add option to collapse columns from the left.
 * V1.1.1 (20/05/2014) - Adjust the Push code, Add default vertical scroll bar and min width property.
 * V1.1.2 (29/06/2014) - Add the option to over-ride the default margin variable in an optional argument.
+* V2.0.1 (02/02/2015) - Add the option to use grid ratios as well as traditional column layouts.
 
 ### License
 ```

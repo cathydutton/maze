@@ -928,31 +928,53 @@ body {
   }
 }
 
-/* EQUAL
+/* RATIO
 ============================================================== */
-.equal-five {
+.ratio-two-five {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   float: left;
   background: #ffa600;
   cursor: pointer;
   padding: 20px;
-  width: 18%;
+  width: 38%;
   margin-left: 1%;
   margin-right: 1%;
 }
-.equal-five:hover {
+.ratio-two-five:hover {
   background: #312a1e;
   color: #fff;
 }
 @media only screen and (max-width: 400px) {
-  .equal-five {
+  .ratio-two-five {
     width: 98%;
     margin: 1%;
   }
 }
 
-.equal-seven {
+.ratio-three-five {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  background: #ffa600;
+  cursor: pointer;
+  padding: 20px;
+  width: 58%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.ratio-three-five:hover {
+  background: #312a1e;
+  color: #fff;
+}
+@media only screen and (max-width: 400px) {
+  .ratio-three-five {
+    width: 98%;
+    margin: 1%;
+  }
+}
+
+.ratio-seven {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   float: left;
@@ -963,18 +985,18 @@ body {
   margin-left: 1%;
   margin-right: 1%;
 }
-.equal-seven:hover {
+.ratio-seven:hover {
   background: #312a1e;
   color: #fff;
 }
 @media only screen and (max-width: 767px) {
-  .equal-seven {
+  .ratio-seven {
     width: 98%;
     margin: 1%;
   }
 }
 
-.four-eight {
+.ratio-four-eight {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   float: left;
@@ -985,18 +1007,18 @@ body {
   margin-left: 1%;
   margin-right: 1%;
 }
-.four-eight:hover {
+.ratio-four-eight:hover {
   background: #312a1e;
   color: #fff;
 }
 @media only screen and (max-width: 400px) {
-  .four-eight {
+  .ratio-four-eight {
     width: 98%;
     margin: 1%;
   }
 }
 
-.equal-eight {
+.ratio-eight {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   float: left;
@@ -1007,18 +1029,18 @@ body {
   margin-left: 1%;
   margin-right: 1%;
 }
-.equal-eight:hover {
+.ratio-eight:hover {
   background: #312a1e;
   color: #fff;
 }
 @media only screen and (max-width: 400px) {
-  .equal-eight {
+  .ratio-eight {
     width: 48%;
     margin: 1%;
   }
 }
 
-.equal-nine {
+.ratio-nine {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   float: left;
@@ -1029,12 +1051,12 @@ body {
   margin-left: 1%;
   margin-right: 1%;
 }
-.equal-nine:hover {
+.ratio-nine:hover {
   background: #312a1e;
   color: #fff;
 }
 @media only screen and (max-width: 767px) {
-  .equal-nine {
+  .ratio-nine {
     width: 98%;
     margin: 1%;
   }
