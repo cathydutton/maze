@@ -29,8 +29,8 @@ If you have any questions get in touch:
 
 Include the grid mixin on each element in a row, adding up to the $$total-grid-columns variable.
 ```
-@include grid(3)  -  spans 3 columns 
-@include grid(6)  -  spans 6 columns 
+@include grid(3)  -  spans 3 columns of $total-grid-columns
+@include grid(6)  -  spans 6 columns of $total-grid-columns
 ```
 
 #### Grid Ratio:
@@ -55,9 +55,9 @@ Note: The margin needs to be consistent across each row.
 
 Breakpoints are included in the same way as the main grid...
 ```
- @include grid(3)            - Desktop spans 3 columns
- @include break(tablet, 6);  - Tablet spans 6 columns
- @include break(mobile, 12);   - Mobile spans 12 columns
+ @include grid(3)            - Desktop spans 3 columns of $total-grid-columns
+ @include break(tablet, 6);  - Tablet spans 6 columns of $total-grid-columns
+ @include break(mobile, 12);   - Mobile spans 12 columns of $total-grid-columns
 ```
 #### Fold/Float Direction:
 
