@@ -39,7 +39,7 @@ When the design does not fit a traditional coloum layout ratios can be used to c
 
 ```
 @include grid(2, $grid-size:5); - Size Two of Five
-@include grid(3, $grid-size:8); - Size Three of Five
+@include grid(3, $grid-size:5); - Size Three of Five
 ```
 
 #### Margin:
@@ -65,6 +65,11 @@ By default columns will float left and collapse from the right hand side of the 
 ```
 grid(3, $fold:"right"); - spans 3 columns is floated Right and will collapse from the left
 ```
+#### Push:
+
+.push-two {
+  @include grid(2, $push:2); - Add two column spans to the margin.
+}
 
 ### Log
 
