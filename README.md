@@ -5,7 +5,7 @@ Maze is a responsive grid built using Sass and HTML5, the grid is easily customi
 
 * Demo: http://www.get-maze.co.uk/maze/
 * Homepage: http://www.get-maze.co.uk
-* Documentation: http://www.cathydutton.co.uk/maze-responsive-grid-framework
+* Documentation: http://www.cathydutton.co.uk/maze-re-factored
 
 
 ### Support
