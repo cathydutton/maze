@@ -1,52 +1,42 @@
 /* ==========================================================================
 
-  	Maze Responsibe Grid 
- 	Author: Cathy Dutton - http://www.cathydutton.co.uk
-  	Version: 0.1.1 
+    Maze Responsibe Grid 
+    Author: Cathy Dutton - http://www.cathydutton.co.uk
+    Version: 0.1.1 
 
 
-/* VENDOR - Default fall backs & external .scss files.
+/* VENDOR - Default fall backs & external  files.
 ========================================================================== */
 
 
 /* Base - Base variable file along with starting points mixins & placeholders.
 ========================================================================== */
 
-	@import 'base/_base.scss'; 
-	@import 'base/_mixins.scss';
-	@import 'base/_placeholders.scss';
-	
+    @import 'base/base'; 
+    @import 'base/mixins';
+    @import 'base/placeholders';
+  
 
 /* FRAMEWORK - Structure & layout files including the Maze grid function.
 ========================================================================== */
 
-	@import 'framework/_grid.scss'; 
-	@import 'framework/_breakpoints.scss';
-	@import 'framework/_layout.scss';
+    @import 'framework/grid'; 
+    @import 'framework/breakpoints';
+    @import 'framework/layout';
 
 
 /* MODULES - Individual site elements.
 ========================================================================== */
 
-	@import 'modules/_buttons.scss';
-	@import 'modules/_lists.scss';
+    @import 'modules/buttons';
+    @import 'modules/lists';
 
 
 /* Theme - Theme styles for each area of the site.
 ========================================================================== */
-	@import 'theme/_main.scss';
-	@import 'theme/_header.scss';
-	@import 'theme/_nav.scss';
-	@import 'theme/_main.scss';
-	@import 'theme/_footer.scss';
-	@import 'theme/_shame.scss';
-
-
-/* WEB FONTS - Google web font include.
-========================================================================== */
-
-	@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,900italic,900,500italic,700,700italic);
-
-	
-
-
+    @import 'theme/main';
+    @import 'theme/header';
+    @import 'theme/nav';
+    @import 'theme/main';
+    @import 'theme/footer';
+    @import 'theme/shame';
