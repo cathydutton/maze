@@ -39,7 +39,7 @@ $min-width: $break-mobile - 20px; /* Set min width with scroll bar */
         padding: 20px;
         width: (100% / ($grid-size / $col-span)) - $margin ;
 
-        @if $push < 0 {
+        @if $push <= 0 {
             margin-left: ($margin/2);
             margin-right: ($margin/2);
         }  
